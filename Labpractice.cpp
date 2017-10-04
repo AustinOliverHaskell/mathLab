@@ -4,15 +4,17 @@ void power(int base, int exp);
 
 int main()
 {
-    return 0;
+    power(2,3);
 }
 
-void square(int base, int exp)
+void power(int base, int exp)
 {
     int sum = base;
 
-    for (int i = 0; i < exp; i++)
+    for (int i = 0; i < exp - 1; i++)
     {
         sum *= base;
     }
+
+    cout << sum << endl;
 }
